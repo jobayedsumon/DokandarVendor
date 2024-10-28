@@ -1,6 +1,6 @@
-import 'package:sixam_mart_store/features/addon/domain/repositories/addon_repository_interface.dart';
-import 'package:sixam_mart_store/features/addon/domain/services/addon_service_interface.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/addon/domain/repositories/addon_repository_interface.dart';
+import 'package:dokandar_shop/features/addon/domain/services/addon_service_interface.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
 
 class AddonService implements AddonServiceInterface {
   final AddonRepositoryInterface addonRepositoryInterface;

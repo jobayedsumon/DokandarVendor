@@ -1,14 +1,14 @@
 import 'package:flutter/foundation.dart';
-import 'package:sixam_mart_store/common/models/response_model.dart';
-import 'package:sixam_mart_store/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_store/features/auth/domain/models/module_permission_body_model.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_store/helper/route_helper.dart';
-import 'package:sixam_mart_store/common/widgets/custom_snackbar_widget.dart';
+import 'package:dokandar_shop/common/models/response_model.dart';
+import 'package:dokandar_shop/features/auth/controllers/auth_controller.dart';
+import 'package:dokandar_shop/features/auth/domain/models/module_permission_body_model.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/features/profile/domain/models/profile_model.dart';
+import 'package:dokandar_shop/helper/route_helper.dart';
+import 'package:dokandar_shop/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/features/profile/domain/services/profile_service_interface.dart';
+import 'package:dokandar_shop/features/profile/domain/services/profile_service_interface.dart';
 
 class ProfileController extends GetxController implements GetxService {
   final ProfileServiceInterface profileServiceInterface;

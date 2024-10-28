@@ -1,8 +1,8 @@
-import 'package:sixam_mart_store/features/store/controllers/store_controller.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_text_field_widget.dart';
+import 'package:dokandar_shop/features/store/controllers/store_controller.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_text_field_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

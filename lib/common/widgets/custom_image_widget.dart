@@ -1,4 +1,4 @@
-import 'package:sixam_mart_store/util/images.dart';
+import 'package:dokandar_shop/util/images.dart';
 import 'package:flutter/cupertino.dart';
 
 class CustomImageWidget extends StatelessWidget {

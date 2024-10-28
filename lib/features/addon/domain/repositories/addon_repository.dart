@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/addon/domain/repositories/addon_repository_interface.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/addon/domain/repositories/addon_repository_interface.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
 
 class AddonRepository implements AddonRepositoryInterface<AddOns> {
   final ApiClient apiClient;

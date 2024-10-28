@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/helper/route_helper.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/images.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_app_bar_widget.dart';
+import 'package:dokandar_shop/helper/route_helper.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/images.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_app_bar_widget.dart';
 
 class DisbursementMenuScreen extends StatelessWidget {
   const DisbursementMenuScreen({super.key});

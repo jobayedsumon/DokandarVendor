@@ -1,7 +1,7 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/features/banner/domain/models/store_banner_list_model.dart';
-import 'package:sixam_mart_store/features/banner/domain/repositories/banner_repository_interface.dart';
-import 'package:sixam_mart_store/features/banner/domain/services/banner_service_interface.dart';
+import 'package:dokandar_shop/features/banner/domain/models/store_banner_list_model.dart';
+import 'package:dokandar_shop/features/banner/domain/repositories/banner_repository_interface.dart';
+import 'package:dokandar_shop/features/banner/domain/services/banner_service_interface.dart';
 
 class BannerService implements BannerServiceInterface {
   final BannerRepositoryInterface bannerRepositoryInterface;

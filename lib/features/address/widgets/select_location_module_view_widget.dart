@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:sixam_mart_store/features/address/controllers/address_controller.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/images.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_app_bar_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_dropdown_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_snackbar_widget.dart';
-import 'package:sixam_mart_store/features/address/widgets/location_search_dialog_widget.dart';
-import 'package:sixam_mart_store/features/address/widgets/module_view_widget.dart';
+import 'package:dokandar_shop/features/address/controllers/address_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/images.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_app_bar_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_button_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_dropdown_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_snackbar_widget.dart';
+import 'package:dokandar_shop/features/address/widgets/location_search_dialog_widget.dart';
+import 'package:dokandar_shop/features/address/widgets/module_view_widget.dart';
 
 class SelectLocationAndModuleViewWidget extends StatefulWidget {
   final bool fromView;

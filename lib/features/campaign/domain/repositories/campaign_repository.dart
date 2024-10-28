@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/campaign/domain/models/campaign_model.dart';
-import 'package:sixam_mart_store/features/campaign/domain/repositories/campaign_repository_interface.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/campaign/domain/models/campaign_model.dart';
+import 'package:dokandar_shop/features/campaign/domain/repositories/campaign_repository_interface.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
 
 class CampaignRepository implements CampaignRepositoryInterface {
   final ApiClient apiClient;

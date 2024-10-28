@@ -1,4 +1,4 @@
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
 import 'package:intl/intl.dart';
 import 'package:get/get.dart';
 

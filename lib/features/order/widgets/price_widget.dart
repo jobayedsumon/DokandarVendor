@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_store/util/styles.dart';
+import 'package:dokandar_shop/util/styles.dart';
 
 class PriceWidget extends StatelessWidget {
   final String title;

@@ -1,4 +1,4 @@
-import 'package:sixam_mart_store/features/campaign/domain/models/campaign_model.dart';
+import 'package:dokandar_shop/features/campaign/domain/models/campaign_model.dart';
 
 abstract class CampaignServiceInterface {
   Future<List<CampaignModel>?> getCampaignList();

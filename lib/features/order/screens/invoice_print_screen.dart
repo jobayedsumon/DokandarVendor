@@ -6,11 +6,11 @@ import 'package:get/get.dart';
 import 'package:image/image.dart' as i;
 import 'package:permission_handler/permission_handler.dart';
 import 'package:print_bluetooth_thermal/print_bluetooth_thermal.dart';
-import 'package:sixam_mart_store/features/order/widgets/invoice_dialog_widget.dart';
-import 'package:sixam_mart_store/features/order/domain/models/order_details_model.dart';
-import 'package:sixam_mart_store/features/order/domain/models/order_model.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
+import 'package:dokandar_shop/features/order/widgets/invoice_dialog_widget.dart';
+import 'package:dokandar_shop/features/order/domain/models/order_details_model.dart';
+import 'package:dokandar_shop/features/order/domain/models/order_model.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
 
 class InVoicePrintScreen extends StatefulWidget {
   final OrderModel? order;

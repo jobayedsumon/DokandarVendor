@@ -1,7 +1,7 @@
-import 'package:sixam_mart_store/features/html/controllers/html_controller.dart';
+import 'package:dokandar_shop/features/html/controllers/html_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/common/widgets/custom_app_bar_widget.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/common/widgets/custom_app_bar_widget.dart';
 import 'package:get/get.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:url_launcher/url_launcher_string.dart';

@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/disbursement/domain/repositories/disbursement_repository_interface.dart';
-import 'package:sixam_mart_store/features/disbursement/domain/models/disbursement_method_model.dart' as disburse;
-import 'package:sixam_mart_store/features/disbursement/domain/models/disbursement_report_model.dart' as report;
-import 'package:sixam_mart_store/util/app_constants.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/disbursement/domain/repositories/disbursement_repository_interface.dart';
+import 'package:dokandar_shop/features/disbursement/domain/models/disbursement_method_model.dart' as disburse;
+import 'package:dokandar_shop/features/disbursement/domain/models/disbursement_report_model.dart' as report;
+import 'package:dokandar_shop/util/app_constants.dart';
 
 class DisbursementRepository implements DisbursementRepositoryInterface {
   final ApiClient apiClient;

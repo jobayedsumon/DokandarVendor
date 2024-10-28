@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/address/controllers/address_controller.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/common/widgets/custom_dropdown_widget.dart';
+import 'package:dokandar_shop/features/address/controllers/address_controller.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/common/widgets/custom_dropdown_widget.dart';
 
 class ModuleViewWidget extends StatelessWidget {
   const ModuleViewWidget({super.key});

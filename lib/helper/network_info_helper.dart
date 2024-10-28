@@ -1,7 +1,7 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:image_compression_flutter/image_compression_flutter.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

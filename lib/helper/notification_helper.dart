@@ -3,17 +3,17 @@ import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:sixam_mart_store/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_store/features/chat/controllers/chat_controller.dart';
-import 'package:sixam_mart_store/features/notification/controllers/notification_controller.dart';
-import 'package:sixam_mart_store/features/order/controllers/order_controller.dart';
-import 'package:sixam_mart_store/features/notification/domain/models/notification_body_model.dart';
-import 'package:sixam_mart_store/helper/route_helper.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
+import 'package:dokandar_shop/features/auth/controllers/auth_controller.dart';
+import 'package:dokandar_shop/features/chat/controllers/chat_controller.dart';
+import 'package:dokandar_shop/features/notification/controllers/notification_controller.dart';
+import 'package:dokandar_shop/features/order/controllers/order_controller.dart';
+import 'package:dokandar_shop/features/notification/domain/models/notification_body_model.dart';
+import 'package:dokandar_shop/helper/route_helper.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
-import 'package:sixam_mart_store/features/dashboard/widgets/new_request_dialog_widget.dart';
+import 'package:dokandar_shop/features/dashboard/widgets/new_request_dialog_widget.dart';
 
 class NotificationHelper {
 

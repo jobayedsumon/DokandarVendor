@@ -1,6 +1,6 @@
-import 'package:sixam_mart_store/features/expense/domain/models/expense_model.dart';
-import 'package:sixam_mart_store/features/expense/domain/repositories/expense_repository_interface.dart';
-import 'package:sixam_mart_store/features/expense/domain/services/expense_service_interface.dart';
+import 'package:dokandar_shop/features/expense/domain/models/expense_model.dart';
+import 'package:dokandar_shop/features/expense/domain/repositories/expense_repository_interface.dart';
+import 'package:dokandar_shop/features/expense/domain/services/expense_service_interface.dart';
 
 class ExpenseService implements ExpenseServiceInterface {
   final ExpenseRepositoryInterface expenseRepositoryInterface;

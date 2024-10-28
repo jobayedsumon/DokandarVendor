@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/splash/domain/repositories/splash_repository_interface.dart';
-import 'package:sixam_mart_store/features/splash/domain/services/splash_service_interface.dart';
+import 'package:dokandar_shop/features/splash/domain/repositories/splash_repository_interface.dart';
+import 'package:dokandar_shop/features/splash/domain/services/splash_service_interface.dart';
 
 class SplashService implements SplashServiceInterface {
   final SplashRepositoryInterface splashRepositoryInterface;

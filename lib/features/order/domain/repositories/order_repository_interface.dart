@@ -1,6 +1,6 @@
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/order/domain/models/update_status_body_model.dart';
-import 'package:sixam_mart_store/interface/repository_interface.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/order/domain/models/update_status_body_model.dart';
+import 'package:dokandar_shop/interface/repository_interface.dart';
 
 abstract class OrderRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getPaginatedOrderList(int offset, String status);

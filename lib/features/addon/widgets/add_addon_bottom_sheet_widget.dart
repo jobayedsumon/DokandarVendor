@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
-import 'package:sixam_mart_store/features/addon/controllers/addon_controller.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/common/models/config_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_snackbar_widget.dart';
-import 'package:sixam_mart_store/common/widgets/text_field_widget.dart';
+import 'package:dokandar_shop/features/addon/controllers/addon_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/common/models/config_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/common/widgets/custom_button_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_snackbar_widget.dart';
+import 'package:dokandar_shop/common/widgets/text_field_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,7 +1,7 @@
-import 'package:sixam_mart_store/interface/repository_interface.dart';
+import 'package:dokandar_shop/interface/repository_interface.dart';
 import 'dart:async';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/features/store/domain/models/store_body_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/store_body_model.dart';
 
 abstract class AuthRepositoryInterface implements RepositoryInterface {
   Future<dynamic> login(String? email, String password, String type);

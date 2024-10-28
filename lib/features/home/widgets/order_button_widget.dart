@@ -1,6 +1,6 @@
-import 'package:sixam_mart_store/features/order/controllers/order_controller.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
+import 'package:dokandar_shop/features/order/controllers/order_controller.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
 import 'package:flutter/material.dart';
 
 class OrderButtonWidget extends StatelessWidget {

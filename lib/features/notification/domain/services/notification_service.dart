@@ -1,6 +1,6 @@
-import 'package:sixam_mart_store/features/notification/domain/models/notification_model.dart';
-import 'package:sixam_mart_store/features/notification/domain/repositories/notification_repository_interface.dart';
-import 'package:sixam_mart_store/features/notification/domain/services/notification_service_interface.dart';
+import 'package:dokandar_shop/features/notification/domain/models/notification_model.dart';
+import 'package:dokandar_shop/features/notification/domain/repositories/notification_repository_interface.dart';
+import 'package:dokandar_shop/features/notification/domain/services/notification_service_interface.dart';
 
 class NotificationService implements NotificationServiceInterface {
   final NotificationRepositoryInterface notificationRepositoryInterface;

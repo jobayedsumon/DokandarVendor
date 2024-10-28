@@ -1,5 +1,5 @@
-import 'package:sixam_mart_store/features/category/domain/models/category_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/category/domain/models/category_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
 
 abstract class CategoryServiceInterface {
   Future<List<CategoryModel>?> getCategoryList();

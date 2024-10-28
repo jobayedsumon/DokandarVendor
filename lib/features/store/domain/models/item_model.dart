@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
 
 class ItemModel {
   int? _totalSize;

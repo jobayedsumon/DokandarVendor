@@ -1,13 +1,13 @@
 import 'package:image_compression_flutter/image_compression_flutter.dart';
-import 'package:sixam_mart_store/features/store/domain/models/attribute_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/band_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
-import 'package:sixam_mart_store/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/pending_item_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/review_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/unit_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/variant_type_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/variation_body_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/attribute_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/band_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/profile/domain/models/profile_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/pending_item_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/review_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/unit_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/variant_type_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/variation_body_model.dart';
 
 abstract class StoreServiceInterface {
   Future<ItemModel?> getItemList(String offset, String type);

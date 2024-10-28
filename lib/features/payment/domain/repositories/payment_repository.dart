@@ -1,14 +1,14 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
+import 'package:dokandar_shop/api/api_client.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/common/models/response_model.dart';
-import 'package:sixam_mart_store/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/wallet_payment_model.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/widthdrow_method_model.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/withdraw_model.dart';
-import 'package:sixam_mart_store/helper/route_helper.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
-import 'package:sixam_mart_store/features/payment/domain/repositories/payment_repository_interface.dart';
+import 'package:dokandar_shop/common/models/response_model.dart';
+import 'package:dokandar_shop/features/auth/controllers/auth_controller.dart';
+import 'package:dokandar_shop/features/payment/domain/models/wallet_payment_model.dart';
+import 'package:dokandar_shop/features/payment/domain/models/widthdrow_method_model.dart';
+import 'package:dokandar_shop/features/payment/domain/models/withdraw_model.dart';
+import 'package:dokandar_shop/helper/route_helper.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
+import 'package:dokandar_shop/features/payment/domain/repositories/payment_repository_interface.dart';
 
 class PaymentRepository implements PaymentRepositoryInterface {
   final ApiClient apiClient;

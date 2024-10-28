@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/expense/domain/models/expense_model.dart';
-import 'package:sixam_mart_store/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_store/helper/date_converter_helper.dart';
-import 'package:sixam_mart_store/features/expense/domain/services/expense_service_interface.dart';
+import 'package:dokandar_shop/features/expense/domain/models/expense_model.dart';
+import 'package:dokandar_shop/features/profile/controllers/profile_controller.dart';
+import 'package:dokandar_shop/helper/date_converter_helper.dart';
+import 'package:dokandar_shop/features/expense/domain/services/expense_service_interface.dart';
 
 class ExpenseController extends GetxController implements GetxService {
   final ExpenseServiceInterface expenseServiceInterface;

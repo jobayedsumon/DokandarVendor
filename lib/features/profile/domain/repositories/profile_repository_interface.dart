@@ -1,6 +1,6 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_store/interface/repository_interface.dart';
+import 'package:dokandar_shop/features/profile/domain/models/profile_model.dart';
+import 'package:dokandar_shop/interface/repository_interface.dart';
 
 abstract class ProfileRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getProfileInfo();

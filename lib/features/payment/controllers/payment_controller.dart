@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/bank_info_body_model.dart';
-import 'package:sixam_mart_store/common/models/response_model.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/wallet_payment_model.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/widthdrow_method_model.dart';
-import 'package:sixam_mart_store/features/payment/domain/models/withdraw_model.dart';
-import 'package:sixam_mart_store/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_snackbar_widget.dart';
+import 'package:dokandar_shop/features/payment/domain/models/bank_info_body_model.dart';
+import 'package:dokandar_shop/common/models/response_model.dart';
+import 'package:dokandar_shop/features/payment/domain/models/wallet_payment_model.dart';
+import 'package:dokandar_shop/features/payment/domain/models/widthdrow_method_model.dart';
+import 'package:dokandar_shop/features/payment/domain/models/withdraw_model.dart';
+import 'package:dokandar_shop/features/profile/controllers/profile_controller.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/payment/domain/services/payment_service_interface.dart';
+import 'package:dokandar_shop/features/payment/domain/services/payment_service_interface.dart';
 
 class PaymentController extends GetxController implements GetxService {
   final PaymentServiceInterface paymentServiceInterface;

@@ -2,12 +2,12 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_snackbar_widget.dart';
-import 'package:sixam_mart_store/features/auth/widgets/min_max_time_picker_widget.dart';
+import 'package:dokandar_shop/features/auth/controllers/auth_controller.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_button_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_snackbar_widget.dart';
+import 'package:dokandar_shop/features/auth/widgets/min_max_time_picker_widget.dart';
 
 class CustomTimePickerWidget extends StatelessWidget {
   const CustomTimePickerWidget({super.key});

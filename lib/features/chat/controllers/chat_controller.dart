@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/notification/domain/models/notification_body_model.dart';
-import 'package:sixam_mart_store/features/chat/domain/models/conversation_model.dart';
-import 'package:sixam_mart_store/features/chat/domain/models/message_model.dart';
-import 'package:sixam_mart_store/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_store/features/chat/domain/services/chat_service_interface.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/notification/domain/models/notification_body_model.dart';
+import 'package:dokandar_shop/features/chat/domain/models/conversation_model.dart';
+import 'package:dokandar_shop/features/chat/domain/models/message_model.dart';
+import 'package:dokandar_shop/features/profile/controllers/profile_controller.dart';
+import 'package:dokandar_shop/features/chat/domain/services/chat_service_interface.dart';
 
 class ChatController extends GetxController implements GetxService {
   final ChatServiceInterface chatServiceInterface;

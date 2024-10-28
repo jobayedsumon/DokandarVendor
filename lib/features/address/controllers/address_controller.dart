@@ -1,15 +1,15 @@
 import 'dart:convert';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:sixam_mart_store/features/address/domain/models/address_model.dart';
-import 'package:sixam_mart_store/features/auth/domain/models/module_model.dart';
-import 'package:sixam_mart_store/features/address/domain/models/place_details_model.dart';
-import 'package:sixam_mart_store/features/address/domain/models/prediction_model.dart';
-import 'package:sixam_mart_store/features/address/domain/models/zone_model.dart';
-import 'package:sixam_mart_store/features/address/domain/models/zone_response_model.dart';
+import 'package:dokandar_shop/features/address/domain/models/address_model.dart';
+import 'package:dokandar_shop/features/auth/domain/models/module_model.dart';
+import 'package:dokandar_shop/features/address/domain/models/place_details_model.dart';
+import 'package:dokandar_shop/features/address/domain/models/prediction_model.dart';
+import 'package:dokandar_shop/features/address/domain/models/zone_model.dart';
+import 'package:dokandar_shop/features/address/domain/models/zone_response_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/address/domain/services/address_service_interface.dart';
+import 'package:dokandar_shop/features/address/domain/services/address_service_interface.dart';
 
 class AddressController extends GetxController implements GetxService {
   final AddressServiceInterface addressServiceInterface;

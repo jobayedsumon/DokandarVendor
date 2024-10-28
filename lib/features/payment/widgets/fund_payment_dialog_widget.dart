@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/images.dart';
-import 'package:sixam_mart_store/util/styles.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/images.dart';
+import 'package:dokandar_shop/util/styles.dart';
 
 class FundPaymentDialogWidget extends StatelessWidget {
   const FundPaymentDialogWidget({super.key});

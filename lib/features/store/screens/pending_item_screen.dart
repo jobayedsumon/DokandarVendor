@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/features/store/controllers/store_controller.dart';
-import 'package:sixam_mart_store/helper/price_converter_helper.dart';
-import 'package:sixam_mart_store/helper/route_helper.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_app_bar_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_image_widget.dart';
-import 'package:sixam_mart_store/features/store/widgets/edit_button_widget.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/features/store/controllers/store_controller.dart';
+import 'package:dokandar_shop/helper/price_converter_helper.dart';
+import 'package:dokandar_shop/helper/route_helper.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_app_bar_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_image_widget.dart';
+import 'package:dokandar_shop/features/store/widgets/edit_button_widget.dart';
 
 class PendingItemScreen extends StatefulWidget {
   const PendingItemScreen({super.key});

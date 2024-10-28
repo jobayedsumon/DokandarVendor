@@ -1,4 +1,4 @@
-import 'package:sixam_mart_store/features/order/domain/models/order_model.dart';
+import 'package:dokandar_shop/features/order/domain/models/order_model.dart';
 
 class RunningOrderModel {
   String status;

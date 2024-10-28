@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/common/models/config_model.dart';
-import 'package:sixam_mart_store/features/chat/domain/models/conversation_model.dart';
-import 'package:sixam_mart_store/features/chat/domain/models/message_model.dart';
-import 'package:sixam_mart_store/helper/date_converter_helper.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_image_widget.dart';
-import 'package:sixam_mart_store/features/chat/widgets/image_dialog_widget.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/common/models/config_model.dart';
+import 'package:dokandar_shop/features/chat/domain/models/conversation_model.dart';
+import 'package:dokandar_shop/features/chat/domain/models/message_model.dart';
+import 'package:dokandar_shop/helper/date_converter_helper.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_image_widget.dart';
+import 'package:dokandar_shop/features/chat/widgets/image_dialog_widget.dart';
 
 class MessageBubbleWidget extends StatelessWidget {
   final Message message;

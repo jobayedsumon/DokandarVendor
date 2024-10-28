@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/pos/domain/repositories/pos_repository_interface.dart';
-import 'package:sixam_mart_store/features/pos/domain/services/pos_service_interface.dart';
+import 'package:dokandar_shop/features/pos/domain/repositories/pos_repository_interface.dart';
+import 'package:dokandar_shop/features/pos/domain/services/pos_service_interface.dart';
 
 class PosService implements PosServiceInterface {
   final PosRepositoryInterface posRepositoryInterface;

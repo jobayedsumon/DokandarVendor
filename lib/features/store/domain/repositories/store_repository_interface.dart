@@ -1,8 +1,8 @@
-import 'package:sixam_mart_store/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/band_model.dart';
-import 'package:sixam_mart_store/interface/repository_interface.dart';
+import 'package:dokandar_shop/features/profile/domain/models/profile_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/band_model.dart';
+import 'package:dokandar_shop/interface/repository_interface.dart';
 import 'package:image_compression_flutter/image_compression_flutter.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
 
 abstract class StoreRepositoryInterface<T> extends RepositoryInterface<Schedules> {
   Future<dynamic> getItemList(String offset, String type);

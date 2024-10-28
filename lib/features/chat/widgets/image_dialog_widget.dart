@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/common/widgets/custom_image_widget.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/common/widgets/custom_image_widget.dart';
 
 class ImageDialogWidget extends StatelessWidget {
   final String imageUrl;

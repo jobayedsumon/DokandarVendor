@@ -1,8 +1,8 @@
-import 'package:sixam_mart_store/features/banner/domain/models/store_banner_list_model.dart';
-import 'package:sixam_mart_store/common/widgets/custom_snackbar_widget.dart';
+import 'package:dokandar_shop/features/banner/domain/models/store_banner_list_model.dart';
+import 'package:dokandar_shop/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/features/banner/domain/services/banner_service_interface.dart';
+import 'package:dokandar_shop/features/banner/domain/services/banner_service_interface.dart';
 
 class BannerController extends GetxController implements GetxService {
   final BannerServiceInterface bannerServiceInterface;

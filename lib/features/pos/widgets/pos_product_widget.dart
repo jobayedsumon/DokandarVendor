@@ -1,15 +1,15 @@
-import 'package:sixam_mart_store/common/widgets/rating_bar_widget.dart';
-import 'package:sixam_mart_store/features/pos/controllers/pos_controller.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/features/pos/domain/models/cart_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
-import 'package:sixam_mart_store/helper/price_converter_helper.dart';
-import 'package:sixam_mart_store/helper/responsive_helper.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/custom_image_widget.dart';
-import 'package:sixam_mart_store/features/pos/widgets/product_bottom_sheet_widget.dart';
-import 'package:sixam_mart_store/features/pos/widgets/quantity_button_widget.dart';
+import 'package:dokandar_shop/common/widgets/rating_bar_widget.dart';
+import 'package:dokandar_shop/features/pos/controllers/pos_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/features/pos/domain/models/cart_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/helper/price_converter_helper.dart';
+import 'package:dokandar_shop/helper/responsive_helper.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/custom_image_widget.dart';
+import 'package:dokandar_shop/features/pos/widgets/product_bottom_sheet_widget.dart';
+import 'package:dokandar_shop/features/pos/widgets/quantity_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

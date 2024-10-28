@@ -1,5 +1,5 @@
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/styles.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/styles.dart';
 import 'package:flutter/material.dart';
 
 class RatingBarWidget extends StatelessWidget {

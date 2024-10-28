@@ -3,9 +3,9 @@ import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:sixam_mart_store/features/address/controllers/address_controller.dart';
-import 'package:sixam_mart_store/features/address/domain/models/prediction_model.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
+import 'package:dokandar_shop/features/address/controllers/address_controller.dart';
+import 'package:dokandar_shop/features/address/domain/models/prediction_model.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
 
 class LocationSearchDialogWidget extends StatelessWidget {
   final GoogleMapController? mapController;

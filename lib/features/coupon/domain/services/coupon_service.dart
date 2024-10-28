@@ -1,7 +1,7 @@
-import 'package:sixam_mart_store/common/models/response_model.dart';
-import 'package:sixam_mart_store/features/coupon/domain/models/coupon_body_model.dart';
-import 'package:sixam_mart_store/features/coupon/domain/repositories/coupon_repository_interface.dart';
-import 'package:sixam_mart_store/features/coupon/domain/services/coupon_service_interface.dart';
+import 'package:dokandar_shop/common/models/response_model.dart';
+import 'package:dokandar_shop/features/coupon/domain/models/coupon_body_model.dart';
+import 'package:dokandar_shop/features/coupon/domain/repositories/coupon_repository_interface.dart';
+import 'package:dokandar_shop/features/coupon/domain/services/coupon_service_interface.dart';
 
 class CouponService implements CouponServiceInterface {
   final CouponRepositoryInterface couponRepositoryInterface;

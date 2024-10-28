@@ -1,20 +1,20 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:image_compression_flutter/image_compression_flutter.dart';
-import 'package:sixam_mart_store/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/store/domain/models/attr.dart';
-import 'package:sixam_mart_store/features/store/domain/models/attribute_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/band_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
-import 'package:sixam_mart_store/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/pending_item_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/review_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/unit_model.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
+import 'package:dokandar_shop/features/profile/controllers/profile_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/store/domain/models/attr.dart';
+import 'package:dokandar_shop/features/store/domain/models/attribute_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/band_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/profile/domain/models/profile_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/pending_item_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/review_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/unit_model.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/store/domain/repositories/store_repository_interface.dart';
+import 'package:dokandar_shop/features/store/domain/repositories/store_repository_interface.dart';
 
 class StoreRepository implements StoreRepositoryInterface {
   final ApiClient apiClient;

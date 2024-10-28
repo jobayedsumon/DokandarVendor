@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sixamtech.sixam_mart_store_app">
+    package="store.dokandar.xyz">
 
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -38,13 +38,13 @@
     </queries>
 
     <application
-        android:label="6amMart Store"
+        android:label="Dokandar Shop"
         android:name="${applicationName}"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCaCSJ0BZItSyXqBv8vpD1N4WBffJeKhLQ"/>
+            android:value="AIzaSyDNtJMAKKfqKgW8cjshI9n6AWE9CKQA5KE"/>
 
         <activity
             android:name=".MainActivity"

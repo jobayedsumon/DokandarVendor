@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/features/auth/domain/repositories/auth_repository_interface.dart';
-import 'package:sixam_mart_store/features/auth/domain/services/auth_service_interface.dart';
-import 'package:sixam_mart_store/features/store/domain/models/store_body_model.dart';
+import 'package:dokandar_shop/features/auth/domain/repositories/auth_repository_interface.dart';
+import 'package:dokandar_shop/features/auth/domain/services/auth_service_interface.dart';
+import 'package:dokandar_shop/features/store/domain/models/store_body_model.dart';
 
 class AuthService implements AuthServiceInterface {
   final AuthRepositoryInterface authRepositoryInterface;

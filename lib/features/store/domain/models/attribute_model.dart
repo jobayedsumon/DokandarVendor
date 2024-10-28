@@ -1,4 +1,4 @@
-import 'package:sixam_mart_store/features/store/domain/models/attr.dart';
+import 'package:dokandar_shop/features/store/domain/models/attr.dart';
 import 'package:flutter/material.dart';
 
 class AttributeModel {

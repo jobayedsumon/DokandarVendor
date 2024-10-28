@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_store/features/language/domain/models/language_model.dart';
-import 'package:sixam_mart_store/features/language/domain/repositories/language_repository_interface.dart';
-import 'package:sixam_mart_store/features/language/domain/services/language_service_interface.dart';
+import 'package:dokandar_shop/features/language/domain/models/language_model.dart';
+import 'package:dokandar_shop/features/language/domain/repositories/language_repository_interface.dart';
+import 'package:dokandar_shop/features/language/domain/services/language_service_interface.dart';
 
 class LanguageService implements LanguageServiceInterface {
   final LanguageRepositoryInterface languageRepositoryInterface;

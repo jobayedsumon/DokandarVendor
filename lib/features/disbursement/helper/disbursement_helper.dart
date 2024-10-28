@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/disbursement/controllers/disbursement_controller.dart';
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/features/disbursement/widgets/withdraw_method_attention_dialog_widget.dart';
+import 'package:dokandar_shop/features/disbursement/controllers/disbursement_controller.dart';
+import 'package:dokandar_shop/features/splash/controllers/splash_controller.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/features/disbursement/widgets/withdraw_method_attention_dialog_widget.dart';
 
 class DisbursementHelper {
 

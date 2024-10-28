@@ -1,4 +1,4 @@
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
 
 abstract class AddonServiceInterface {
   Future<List<AddOns>?> getAddonList();

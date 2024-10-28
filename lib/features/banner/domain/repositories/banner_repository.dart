@@ -1,9 +1,9 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/api/api_client.dart';
-import 'package:sixam_mart_store/features/banner/domain/models/store_banner_list_model.dart';
-import 'package:sixam_mart_store/util/app_constants.dart';
+import 'package:dokandar_shop/api/api_client.dart';
+import 'package:dokandar_shop/features/banner/domain/models/store_banner_list_model.dart';
+import 'package:dokandar_shop/util/app_constants.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/banner/domain/repositories/banner_repository_interface.dart';
+import 'package:dokandar_shop/features/banner/domain/repositories/banner_repository_interface.dart';
 
 class BannerRepository implements BannerRepositoryInterface {
   final ApiClient apiClient;

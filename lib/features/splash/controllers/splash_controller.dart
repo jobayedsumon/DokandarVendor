@@ -1,8 +1,8 @@
-import 'package:sixam_mart_store/common/models/config_model.dart';
+import 'package:dokandar_shop/common/models/config_model.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:sixam_mart_store/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_store/features/splash/domain/services/splash_service_interface.dart';
+import 'package:dokandar_shop/features/profile/controllers/profile_controller.dart';
+import 'package:dokandar_shop/features/splash/domain/services/splash_service_interface.dart';
 
 class SplashController extends GetxController implements GetxService {
   final SplashServiceInterface splashServiceInterface;

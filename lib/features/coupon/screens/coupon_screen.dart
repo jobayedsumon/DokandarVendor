@@ -2,17 +2,17 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/coupon/controllers/coupon_controller.dart';
-import 'package:sixam_mart_store/features/language/controllers/language_controller.dart';
-import 'package:sixam_mart_store/features/coupon/widgets/coupon_card_dialogue_widget.dart';
-import 'package:sixam_mart_store/helper/price_converter_helper.dart';
-import 'package:sixam_mart_store/util/dimensions.dart';
-import 'package:sixam_mart_store/util/images.dart';
-import 'package:sixam_mart_store/util/styles.dart';
-import 'package:sixam_mart_store/common/widgets/confirmation_dialog_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_app_bar_widget.dart';
-import 'package:sixam_mart_store/common/widgets/custom_loader_widget.dart';
-import 'package:sixam_mart_store/features/coupon/screens/add_coupon_screen.dart';
+import 'package:dokandar_shop/features/coupon/controllers/coupon_controller.dart';
+import 'package:dokandar_shop/features/language/controllers/language_controller.dart';
+import 'package:dokandar_shop/features/coupon/widgets/coupon_card_dialogue_widget.dart';
+import 'package:dokandar_shop/helper/price_converter_helper.dart';
+import 'package:dokandar_shop/util/dimensions.dart';
+import 'package:dokandar_shop/util/images.dart';
+import 'package:dokandar_shop/util/styles.dart';
+import 'package:dokandar_shop/common/widgets/confirmation_dialog_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_app_bar_widget.dart';
+import 'package:dokandar_shop/common/widgets/custom_loader_widget.dart';
+import 'package:dokandar_shop/features/coupon/screens/add_coupon_screen.dart';
 
 class CouponScreen extends StatefulWidget {
   const CouponScreen({super.key});

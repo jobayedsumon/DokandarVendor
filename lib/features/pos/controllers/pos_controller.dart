@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
-import 'package:sixam_mart_store/features/pos/domain/models/cart_model.dart';
-import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
+import 'package:dokandar_shop/features/pos/domain/models/cart_model.dart';
+import 'package:dokandar_shop/features/store/domain/models/item_model.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_store/features/pos/domain/services/pos_service_interface.dart';
+import 'package:dokandar_shop/features/pos/domain/services/pos_service_interface.dart';
 
 class PosController extends GetxController implements GetxService {
   final PosServiceInterface posServiceInterface;

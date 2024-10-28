@@ -1,6 +1,6 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_store/common/models/response_model.dart';
-import 'package:sixam_mart_store/features/profile/domain/models/profile_model.dart';
+import 'package:dokandar_shop/common/models/response_model.dart';
+import 'package:dokandar_shop/features/profile/domain/models/profile_model.dart';
 
 abstract class ProfileServiceInterface {
   Future<ProfileModel?> getProfileInfo();
