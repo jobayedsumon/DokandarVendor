@@ -5,7 +5,8 @@ class AppConstants {
   static const String appName = 'Dokandar Shop';
   static const double appVersion = 2.7;
 
-  static const String baseUrl = 'https://admin.dokandar.online';
+  // static const String baseUrl = 'https://admin.dokandar.online';
+  static const String baseUrl = 'http://127.0.0.1:8000';
 
   static const String configUri = '/api/v1/config';
   static const String loginUri = '/api/v1/auth/vendor/login';
