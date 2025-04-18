@@ -15,6 +15,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'agora/call_manager.dart';
+import 'features/auth/controllers/auth_controller.dart';
+import 'features/profile/controllers/profile_controller.dart';
+import 'features/splash/controllers/splash_controller.dart';
 import 'helper/get_di.dart' as di;
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -43,6 +47,21 @@ Future<void> main() async {
   runApp(MyApp(languages: languages, body: body));
 }
 
+void _route() {
+  Get.find<SplashController>().getConfigData().then((bool isSuccess) async {
+    if (isSuccess) {
+      if (Get.find<AuthController>().isLoggedIn()) {
+        Get.find<AuthController>().updateToken();
+        // Initialize CallManager
+        ProfileController profileController = Get.find<ProfileController>();
+        await profileController.getProfile();
+        Get.put(CallManager(profileController.profileModel!), permanent: true);
+        Get.find<CallManager>();
+      }
+    }
+  });
+}
+
 class MyApp extends StatelessWidget {
   final Map<String, Map<String, String>>? languages;
   final NotificationBody? body;
@@ -50,6 +69,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    _route();
     return GetBuilder<ThemeController>(builder: (themeController) {
       return GetBuilder<LocalizationController>(builder: (localizeController) {
         return GetMaterialApp(

@@ -105,6 +105,9 @@ class AppConstants {
   static const String sendMessageUri = '/api/v1/vendor/message/send';
   static const String searchConversationListUri = '/api/v1/vendor/message/search-list';
 
+  // Push Notification
+  static const String pushNotificationUri = '/api/v1/customer/push-notification';
+
 
   // Shared Key
   static const String theme = '6am_mart_store_theme';

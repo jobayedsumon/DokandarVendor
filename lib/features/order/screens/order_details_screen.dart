@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:dokandar_shop/agora/call_widgets.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/foundation.dart';
 import 'package:image_picker/image_picker.dart';
@@ -446,8 +447,30 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
                       icon: const Icon(Icons.directions), label: Text('direction'.tr),
                     ) : const SizedBox(),
                     const SizedBox(width: Dimensions.paddingSizeSmall),
-
-                    (order.orderStatus != 'delivered' && order.orderStatus != 'failed' && Get.find<ProfileController>().modulePermission!.chat!
+                                            (order.orderStatus != 'delivered' &&
+                                                    order.orderStatus !=
+                                                        'failed' &&
+                                                    order.orderStatus !=
+                                                        'canceled' &&
+                                                    order.orderStatus !=
+                                                        'refunded')
+                                                ? order.isGuest!
+                                                    ? const SizedBox()
+                                                    : CallButton(
+                                                        userId: order
+                                                                .customer!.id ??
+                                                            0,
+                                                        userType: 'customer',
+                                                        name: order
+                                                            .deliveryAddress!
+                                                            .contactPersonName!,
+                                                        image:
+                                                            '${Get.find<SplashController>().configModel!.baseUrls!.customerImageUrl}/${order.customer != null ? order.customer!.image : ''}')
+                                                : const SizedBox(),
+                                            const SizedBox(
+                                                height: Dimensions
+                                                    .paddingSizeLarge),
+                                            (order.orderStatus != 'delivered' && order.orderStatus != 'failed' && Get.find<ProfileController>().modulePermission!.chat!
                     && order.orderStatus != 'canceled' && order.orderStatus != 'refunded') ? order.isGuest! ? const SizedBox() : TextButton.icon(
                       onPressed: () async {
                         _timer?.cancel();
@@ -510,8 +533,33 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
                           style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
                         ),
                       ) : const SizedBox(),
-
-                      (controllerOrderModel.orderStatus != 'delivered' && controllerOrderModel.orderStatus != 'failed' && controllerOrderModel.orderStatus != 'canceled'
+                                                  (controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'delivered' &&
+                                                          controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'failed' &&
+                                                          controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'canceled' &&
+                                                          controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'refunded')
+                                                      ? CallButton(
+                                                          userId: order
+                                                                  .deliveryMan!
+                                                                  .id ??
+                                                              0,
+                                                          userType:
+                                                              'deliveryman',
+                                                          name:
+                                                              '${order.deliveryMan!.fName} ${order.deliveryMan!.lName}',
+                                                          image: order.deliveryMan !=
+                                                                  null
+                                                              ? '${Get.find<SplashController>().configModel!.baseUrls!.deliveryManImageUrl}/${order.deliveryMan!.image}'
+                                                              : '')
+                                                      : const SizedBox(),
+                                                  (controllerOrderModel.orderStatus != 'delivered' && controllerOrderModel.orderStatus != 'failed' && controllerOrderModel.orderStatus != 'canceled'
                       && controllerOrderModel.orderStatus != 'refunded' && Get.find<ProfileController>().modulePermission!.chat!) ? TextButton.icon(
                         onPressed: () async {
                           _timer?.cancel();
