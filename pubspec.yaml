@@ -1,4 +1,4 @@
-# Use fvm
+# Use fvm 3.22.0
 name: dokandar_shop
 description: An application for multivendor ecommerce restaurant.
 publish_to: 'none'

@@ -165,8 +165,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
               tax = order.totalTaxAmount;
               taxIncluded = order.taxStatus;
               additionalCharge = order.additionalCharge!;
-              extraPackagingAmount = order.extraPackagingAmount!;
-              referrerBonusAmount = order.referrerBonusAmount!;
+              extraPackagingAmount = order.extraPackagingAmount ?? 0;
+              referrerBonusAmount = order.referrerBonusAmount ?? 0;
               couponDiscount = order.couponDiscountAmount;
               if(isPrescriptionOrder!){
                 double orderAmount = order.orderAmount ?? 0;
@@ -518,21 +518,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
                         ),
                       ])),
 
-                      (controllerOrderModel.orderStatus != 'delivered' && controllerOrderModel.orderStatus != 'failed'
-                      && controllerOrderModel.orderStatus != 'canceled' && controllerOrderModel.orderStatus != 'refunded') ? TextButton.icon(
-                        onPressed: () async {
-                          if(await canLaunchUrlString('tel:${order.deliveryMan!.phone ?? '' }')) {
-                            launchUrlString('tel:${order.deliveryMan!.phone ?? '' }', mode: LaunchMode.externalApplication);
-                          }else {
-                            showCustomSnackBar('${'can_not_launch'.tr} ${order.deliveryMan!.phone ?? ''}');
-                          }
-                        },
-                        icon: Icon(Icons.call, color: Theme.of(context).primaryColor, size: 20),
-                        label: Text(
-                          'call'.tr,
-                          style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
-                        ),
-                      ) : const SizedBox(),
+                                                  // CALL BUTTON START
                                                   (controllerOrderModel
                                                                   .orderStatus !=
                                                               'delivered' &&
@@ -559,30 +545,124 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
                                                               ? '${Get.find<SplashController>().configModel!.baseUrls!.deliveryManImageUrl}/${order.deliveryMan!.image}'
                                                               : '')
                                                       : const SizedBox(),
-                                                  (controllerOrderModel.orderStatus != 'delivered' && controllerOrderModel.orderStatus != 'failed' && controllerOrderModel.orderStatus != 'canceled'
-                      && controllerOrderModel.orderStatus != 'refunded' && Get.find<ProfileController>().modulePermission!.chat!) ? TextButton.icon(
+                                                  // CALL BUTTON END
+
+                                                  // CHAT BUTTON START
+                                                  (controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'delivered' &&
+                                                          controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'failed' &&
+                                                          controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'canceled' &&
+                                                          controllerOrderModel
+                                                                  .orderStatus !=
+                                                              'refunded' &&
+                                                          Get.find<
+                                                                  ProfileController>()
+                                                              .modulePermission!
+                                                              .chat!)
+                                                      ? TextButton.icon(
+                                                          onPressed: () async {
+                                                            _timer?.cancel();
+                                                            await Get.toNamed(
+                                                                RouteHelper
+                                                                    .getChatRoute(
+                                                              notificationBody:
+                                                                  NotificationBody(
+                                                                orderId:
+                                                                    controllerOrderModel
+                                                                        .id,
+                                                                deliveryManId: order
+                                                                    .deliveryMan!
+                                                                    .id,
+                                                              ),
+                                                              user: User(
+                                                                id: controllerOrderModel
+                                                                    .deliveryMan!
+                                                                    .id,
+                                                                fName: controllerOrderModel
+                                                                    .deliveryMan!
+                                                                    .fName,
+                                                                lName: controllerOrderModel
+                                                                    .deliveryMan!
+                                                                    .lName,
+                                                                image: controllerOrderModel
+                                                                    .deliveryMan!
+                                                                    .image,
+                                                              ),
+                                                            ));
+                                                            _startApiCalling();
+                                                          },
+                                                          icon: Icon(
+                                                              Icons
+                                                                  .chat_bubble_outline,
+                                                              color: Theme.of(
+                                                                      context)
+                                                                  .primaryColor,
+                                                              size: 20),
+                                                          label: Text(
+                                                            'chat'.tr,
+                                                            style: robotoRegular.copyWith(
+                                                                fontSize: Dimensions
+                                                                    .fontSizeSmall,
+                                                                color: Theme.of(
+                                                                        context)
+                                                                    .primaryColor),
+                                                          ),
+                                                        )
+                                                      : const SizedBox(),
+                                                  // CHAT BUTTON END
+
+                                                  // PHONE BUTTON START
+                      (controllerOrderModel
+                          .orderStatus !=
+                          'delivered' &&
+                          controllerOrderModel
+                              .orderStatus !=
+                              'failed' &&
+                          controllerOrderModel
+                              .orderStatus !=
+                              'canceled' &&
+                          controllerOrderModel
+                              .orderStatus !=
+                              'refunded')
+                          ? TextButton.icon(
                         onPressed: () async {
-                          _timer?.cancel();
-                          await Get.toNamed(RouteHelper.getChatRoute(
-                            notificationBody: NotificationBody(
-                              orderId: controllerOrderModel.id, deliveryManId: order.deliveryMan!.id,
-                            ),
-                            user: User(
-                              id: controllerOrderModel.deliveryMan!.id, fName: controllerOrderModel.deliveryMan!.fName,
-                              lName: controllerOrderModel.deliveryMan!.lName, image: controllerOrderModel.deliveryMan!.image,
-                            ),
-                          ));
-                          _startApiCalling();
+                          if (await canLaunchUrlString(
+                              'tel:${order.deliveryMan!.phone ?? ''}')) {
+                            launchUrlString(
+                                'tel:${order.deliveryMan!.phone ?? ''}',
+                                mode: LaunchMode
+                                    .externalApplication);
+                          } else {
+                            showCustomSnackBar(
+                                '${'can_not_launch'.tr} ${order.deliveryMan!
+                                    .phone ?? ''}');
+                          }
                         },
-                        icon: Icon(Icons.chat_bubble_outline, color: Theme.of(context).primaryColor, size: 20),
+                        icon: Icon(Icons.call,
+                            color: Theme
+                                .of(
+                                context)
+                                .primaryColor,
+                            size: 20),
                         label: Text(
-                          'chat'.tr,
-                          style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                          'Phone'.tr,
+                          style: robotoRegular.copyWith(
+                              fontSize: Dimensions
+                                  .fontSizeSmall,
+                              color: Theme
+                                  .of(
+                                  context)
+                                  .primaryColor),
                         ),
-                      ) : const SizedBox(),
-
+                      )
+                          : const SizedBox(),
+                      // PHONE BUTTON END
                     ]),
-
                     const SizedBox(height: Dimensions.paddingSizeSmall),
                   ]) : const SizedBox(),
 

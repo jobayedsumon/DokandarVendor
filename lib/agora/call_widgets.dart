@@ -21,8 +21,8 @@ class CallButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () async {
+    return TextButton.icon(
+      onPressed: () async {
         callManager.startCall(
           userId,
           userType,
@@ -30,7 +30,8 @@ class CallButton extends StatelessWidget {
           image,
         );
       },
-      child: Icon(Icons.phone, color: Theme.of(context).primaryColor, size: 20),
+      icon: Icon(Icons.phone, color: Theme.of(context).primaryColor, size: 20),
+      label: const Text('Call'),
     );
   }
 }
