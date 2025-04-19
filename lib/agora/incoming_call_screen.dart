@@ -118,8 +118,9 @@ class _IncomingCallScreenState extends State<IncomingCallScreen> {
                         _cancelTimeout();
                         _audioPlayer.stop();
                         callManager.answerCall(
-                          widget.callerId,
                           widget.channel,
+                          widget.callerId,
+                          widget.callerType,
                           widget.callerName,
                           widget.callerImage,
                         );
