@@ -5,8 +5,9 @@ class AppConstants {
   static const String appName = 'Dokandar Shop';
   static const double appVersion = 2.7;
 
-  // static const String baseUrl = 'https://admin.dokandar.online';
-  static const String baseUrl = 'http://127.0.0.1:8000';
+  static const String baseUrl = 'https://admin.dokandar.online';
+
+  // static const String baseUrl = 'http://127.0.0.1:8000';
 
   static const String configUri = '/api/v1/config';
   static const String loginUri = '/api/v1/auth/vendor/login';
@@ -17,8 +18,10 @@ class AppConstants {
   static const String allOrdersUri = '/api/v1/vendor/all-orders';
   static const String currentOrdersUri = '/api/v1/vendor/current-orders';
   static const String completedOrdersUri = '/api/v1/vendor/completed-orders';
-  static const String orderDetailsUri = '/api/v1/vendor/order-details?order_id=';
-  static const String updatedOrderStatusUri = '/api/v1/vendor/update-order-status';
+  static const String orderDetailsUri =
+      '/api/v1/vendor/order-details?order_id=';
+  static const String updatedOrderStatusUri =
+      '/api/v1/vendor/update-order-status';
   static const String notificationUri = '/api/v1/vendor/notifications';
   static const String profileUri = '/api/v1/vendor/profile';
   static const String updateProfileUri = '/api/v1/vendor/update-profile';
@@ -43,7 +46,8 @@ class AppConstants {
   static const String vendorReviewUri = '/api/v1/vendor/item/reviews';
   static const String itemReviewUri = '/api/v1/items/reviews';
   static const String updateItemStatusUri = '/api/v1/vendor/item/status';
-  static const String updateVendorStatusUri = '/api/v1/vendor/update-active-status';
+  static const String updateVendorStatusUri =
+      '/api/v1/vendor/update-active-status';
   static const String searchItemListUri = '/api/v1/vendor/item/search';
   static const String placeOrderUri = '/api/v1/vendor/pos/place-order';
   static const String posOrderUri = '/api/v1/vendor/pos/orders';
@@ -62,49 +66,66 @@ class AppConstants {
   static const String termsAndConditionsUri = '/terms-and-conditions';
   static const String vendorRemoveUri = '/api/v1/vendor/remove-account';
   static const String zoneListUri = '/api/v1/zone/list';
-  static const String searchLocationUri = '/api/v1/config/place-api-autocomplete';
+  static const String searchLocationUri =
+      '/api/v1/config/place-api-autocomplete';
   static const String placeDetailsUri = '/api/v1/config/place-api-details';
   static const String zoneUri = '/api/v1/config/get-zone-id';
   static const String restaurantRegisterUri = '/api/v1/auth/vendor/register';
   static const String currentOrderDetailsUri = '/api/v1/vendor/order?order_id=';
   static const String modulesUri = '/api/v1/module';
   static const String updateOrderUri = '/api/v1/vendor/update-order-amount';
-  static const String orderCancellationUri = '/api/v1/customer/order/cancellation-reasons';
+  static const String orderCancellationUri =
+      '/api/v1/customer/order/cancellation-reasons';
   static const String addCouponUri = '/api/v1/vendor/coupon/store';
   static const String couponListUri = '/api/v1/vendor/coupon/list';
-  static const String couponDetailsUri = '/api/v1/vendor/coupon/view-without-translate';
+  static const String couponDetailsUri =
+      '/api/v1/vendor/coupon/view-without-translate';
   static const String couponChangeStatusUri = '/api/v1/vendor/coupon/status';
   static const String couponDeleteUri = '/api/v1/vendor/coupon/delete';
   static const String couponUpdateUri = '/api/v1/vendor/coupon/update';
   static const String expenseListUri = '/api/v1/vendor/get-expense';
-  static const String updateProductRecommendedUri = '/api/v1/vendor/item/recommended';
+  static const String updateProductRecommendedUri =
+      '/api/v1/vendor/item/recommended';
   static const String updateProductOrganicUri = '/api/v1/vendor/item/organic';
   static const String geocodeUri = '/api/v1/config/geocode-api';
   static const String itemDetailsUri = '/api/v1/vendor/item/details';
-  static const String deliveredOrderNotificationUri = '/api/v1/vendor/send-order-otp';
-  static const String pendingItemListUri = '/api/v1/vendor/item/pending/item/list';
-  static const String pendingItemDetailsUri = '/api/v1/vendor/item/requested/item/view';
+  static const String deliveredOrderNotificationUri =
+      '/api/v1/vendor/send-order-otp';
+  static const String pendingItemListUri =
+      '/api/v1/vendor/item/pending/item/list';
+  static const String pendingItemDetailsUri =
+      '/api/v1/vendor/item/requested/item/view';
   static const String addStoreBannerUri = '/api/v1/vendor/banner/store';
   static const String storeBannerUri = '/api/v1/vendor/banner';
   static const String deleteStoreBannerUri = '/api/v1/vendor/banner/delete';
   static const String updateStoreBannerUri = '/api/v1/vendor/banner/update';
   static const String announcementUri = '/api/v1/vendor/update-announcment';
-  static const String addWithdrawMethodUri = '/api/v1/vendor/withdraw-method/store';
-  static const String disbursementMethodListUri = '/api/v1/vendor/withdraw-method/list';
-  static const String makeDefaultDisbursementMethodUri = '/api/v1/vendor/withdraw-method/make-default';
-  static const String deleteDisbursementMethodUri = '/api/v1/vendor/withdraw-method/delete';
-  static const String getDisbursementReportUri = '/api/v1/vendor/get-disbursement-report';
-  static const String withdrawRequestMethodUri = '/api/v1/vendor/get-withdraw-method-list';
-  static const String walletPaymentListUri = '/api/v1/vendor/wallet-payment-list';
-  static const String makeWalletAdjustmentUri = '/api/v1/vendor/make-wallet-adjustment';
-  static const String makeCollectedCashPaymentUri = '/api/v1/vendor/make-collected-cash-payment';
+  static const String addWithdrawMethodUri =
+      '/api/v1/vendor/withdraw-method/store';
+  static const String disbursementMethodListUri =
+      '/api/v1/vendor/withdraw-method/list';
+  static const String makeDefaultDisbursementMethodUri =
+      '/api/v1/vendor/withdraw-method/make-default';
+  static const String deleteDisbursementMethodUri =
+      '/api/v1/vendor/withdraw-method/delete';
+  static const String getDisbursementReportUri =
+      '/api/v1/vendor/get-disbursement-report';
+  static const String withdrawRequestMethodUri =
+      '/api/v1/vendor/get-withdraw-method-list';
+  static const String walletPaymentListUri =
+      '/api/v1/vendor/wallet-payment-list';
+  static const String makeWalletAdjustmentUri =
+      '/api/v1/vendor/make-wallet-adjustment';
+  static const String makeCollectedCashPaymentUri =
+      '/api/v1/vendor/make-collected-cash-payment';
   static const String getBrandsUri = '/api/v1/brand';
 
   //chat url
   static const String getConversationListUri = '/api/v1/vendor/message/list';
   static const String getMessageListUri = '/api/v1/vendor/message/details';
   static const String sendMessageUri = '/api/v1/vendor/message/send';
-  static const String searchConversationListUri = '/api/v1/vendor/message/search-list';
+  static const String searchConversationListUri =
+      '/api/v1/vendor/message/search-list';
 
   // Push Notification
   static const String pushNotificationUri = '/api/v1/push-notification';
@@ -152,7 +173,11 @@ class AppConstants {
   static const String food = 'food';
 
   static List<LanguageModel> languages = [
-    LanguageModel(imageUrl: Images.english, languageName: 'English', countryCode: 'US', languageCode: 'en'),
+    LanguageModel(
+        imageUrl: Images.english,
+        languageName: 'English',
+        countryCode: 'US',
+        languageCode: 'en'),
     // LanguageModel(imageUrl: Images.arabic, languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
     // LanguageModel(imageUrl: Images.arabic, languageName: 'Spanish', countryCode: 'ES', languageCode: 'es'),
     // LanguageModel(imageUrl: Images.bangla, languageName: 'Bengali', countryCode: 'BN', languageCode: 'bn'),
