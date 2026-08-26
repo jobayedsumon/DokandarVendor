@@ -2,7 +2,7 @@
 name: dokandar_shop
 description: An application for multivendor ecommerce restaurant.
 publish_to: 'none'
-version: 9.0.0+9
+version: 10.0.0+10
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
@@ -53,7 +53,7 @@ dependencies:
   just_the_tooltip: ^0.0.12
   flutter_inappwebview: ^6.0.0
   permission_handler: ^11.3.0
-  agora_rtc_engine: ^6.5.1
+  agora_rtc_engine: ^6.5.2
   agora_token_service: ^0.1.2
 
 dev_dependencies:
